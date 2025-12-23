@@ -45,8 +45,8 @@ func UserMessage[T contentPart](parts ...T) *Message {
 ### Message
 在 `Blades` 中所有的消息角色都支持输入支持多种消息类型：
 - `TextPart` : 纯文本内容
-- `FilePart` : 文件内容
-- `DataPart` : 文件引用
+- `FilePart` : 文件引用
+- `DataPart` : 文件内容
 - `ToolPart` : 工具输出内容
 
 可以使用每个角色对应的方法添加一条或多条信息，这里以 `blades.UserMessage` 为例：
