@@ -100,7 +100,7 @@ agent, err := blades.NewAgent(
     "Example Agent",
     blades.WithModel(model),
     blades.WithInstruction("You are a helpful assistant."),
-    blades.WithMiddleware(Logging()), // Use the logging middleware
+    blades.WithMiddleware(NewLogging()), // Use the logging middleware
 )
 if err != nil {
     log.Fatal(err)
